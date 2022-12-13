@@ -136,6 +136,9 @@ Example command:
 
 Clone this repository to your desired folder:
 
+ create a new directory and jump into
+ git clone https://github.com/vanelnw/bookstore.git
+
 <!--
 Example commands:
 
@@ -149,6 +152,8 @@ Example commands:
 
 Install this project with:
 
+cd bookstore
+npm install
 <!--
 Example command:
 
@@ -161,6 +166,8 @@ Example command:
 ### Usage
 
 To run the project, execute the following command:
+
+npm start
 
 <!--
 Example command:
@@ -204,9 +211,8 @@ Example:
 
 👤 **Vanel**
 
-- GitHub: [@vanelnw](https://github.com/vaneinw)
-- Twitter: [@vanel](https://twitter.com/twitterhandle)
-- LinkedIn: [va-nw](https://linkedin.com/in/va-nw)
+- GitHub: [@vanelnw](https://github.com/vanelnw)
+- LinkedIn: [@va-nw](https://www.linkedin.com/in/va-nw/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
