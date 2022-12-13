@@ -7,7 +7,7 @@ function Categories() {
   const status = useSelector((state) => state.categories);
   return (
     <div>
-      {status}
+      <h1>{status}</h1>
       <button type="button" onClick={() => dispatch(checkingStatus())}>
         Check status
       </button>

@@ -29,14 +29,17 @@ function AddBook() {
         author,
       }),
     );
+    setTitle('');
+    setAuthor('');
+    setSelected('');
   };
 
   return (
     <div>
       <h1>ADD NEW BOOK</h1>
       <form onSubmit={handleSubmit}>
-        <input type="text" name="title" placeholder="Book title" onChange={handleChange} />
-        <input type="text" name="author" placeholder="Book Author" onChange={handleChange} />
+        <input type="text" name="title" value={title} placeholder="Book title" onChange={handleChange} />
+        <input type="text" name="author" value={author} placeholder="Book Author" onChange={handleChange} />
         <select value={selected} onChange={handleSelect}>
           <option value="Action">Action</option>
           <option value="Science Fiction">Science Fiction</option>
