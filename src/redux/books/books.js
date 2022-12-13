@@ -2,12 +2,29 @@ const CREATE_BOOK = 'bookstore/books/CREATE_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 // Reducer
-export default function books(state = [], action = {}) {
+const initialState = [
+  {
+    id: 1,
+    type: 'Action',
+    title: 'The Hunger Games',
+    author: 'Suzane Collins',
+  },
+  {
+    id: 2,
+    type: 'Economie',
+    title: 'Rich Dad Poor Dad',
+    author: 'Robert T. Kiyosaki',
+  },
+];
+
+export default function books(state = initialState, action = {}) {
+  const index = state.indexOf(state.find((x) => x.id === action.id));
+
   switch (action.type) {
     case CREATE_BOOK:
-      return state.push(action.book);
+      return [...state, action.book];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.id);
+      return [...state.slice(0, index), ...state.slice(index + 1)];
     default:
       return state;
   }
