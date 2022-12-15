@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { createBook } from '../redux/books/books';
+import { createBook, fetchBooks } from '../redux/books/bookSlice';
 
 function AddBook() {
   const dispatch = useDispatch();
@@ -23,8 +23,8 @@ function AddBook() {
     event.preventDefault();
     dispatch(
       createBook({
-        id: uuidv4(),
-        type: selected,
+        item_id: uuidv4(),
+        category: selected,
         title,
         author,
       }),
@@ -32,6 +32,7 @@ function AddBook() {
     setTitle('');
     setAuthor('');
     setSelected('');
+    dispatch(fetchBooks());
   };
 
   return (
