@@ -1,3 +1,175 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(30, 108, 180);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.header {
+  width: 100%;
+  background: #fff;
+  box-shadow: 2px 2px 0 rgb(218, 210, 210);
+}
+
+.header-wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header-wrapper .title {
+  color: rgb(26, 118, 193);
+}
+
+.header-wrapper nav {
+  margin-left: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.books-wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.bookContainer {
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  border: 1px solid rgb(235, 231, 231);
+  border-radius: 10px;
+}
+
+.book-details {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.book-details span {
+  color: gray;
+}
+
+.book-details h1 {
+  color: rgb(23, 21, 21);
+}
+
+.book-details h4 {
+  color: rgb(48, 50, 52);
+  margin-bottom: 20px;
+}
+
+.books-details .buttons button {
+  border: none;
+  background-color: aquamarine;
+}
+
+.btn {
+  border: none;
+  border-right: 2px solid rgb(214, 211, 211);
+  padding: 5px 15px;
+  color: rgba(56, 145, 218, 0.643);
+  background-color: #fff;
+}
+
+.btn:nth-child(1) {
+  padding-left: 0;
+}
+
+.btn:nth-child(3) {
+  border-right: none;
+}
+
+.progress {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-right: 1px solid rgb(217, 212, 212);
+}
+
+.progress .circle {
+  width: 70px;
+  height: 70px;
+}
+
+.progress .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.chapter-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.chapter-details p {
+  text-transform: capitalize;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.chapter-details span {
+  color: rgb(16, 15, 15);
+  margin-bottom: 20px;
+}
+
+.form-wrapper {
+  width: 100%;
+  margin-top: 30px;
+  border-top: 2px solid rgb(211, 210, 210);
+}
+
+.form-title {
+  color: rgb(126, 125, 125);
+  margin: 25px 0;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form input,
+select {
+  padding: 10px;
+  border: 1px solid rgb(222, 221, 221);
+  border-radius: 5px;
+  width: 200px;
+}
+
+.cat-container {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

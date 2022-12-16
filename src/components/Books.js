@@ -11,13 +11,13 @@ const Books = () => {
   useEffect(() => {
     dispatch(fetchBooks());
   }, []);
-
+  console.log(books);
   if (books.length === 0) {
     return 'loading...';
   }
 
   return (
-    <div>
+    <div className="books-wrapper">
       {Object.entries(books[0]).map(([k, v]) => (
         <Book key={k} book={v[0]} id={k} />
       ))}
