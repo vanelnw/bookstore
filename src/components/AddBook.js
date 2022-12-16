@@ -36,9 +36,9 @@ function AddBook() {
   };
 
   return (
-    <div>
-      <h1>ADD NEW BOOK</h1>
-      <form onSubmit={handleSubmit}>
+    <div className="form-wrapper">
+      <h3 className="form-title">ADD NEW BOOK</h3>
+      <form className="form" onSubmit={handleSubmit}>
         <input type="text" name="title" value={title} placeholder="Book title" onChange={handleChange} />
         <input type="text" name="author" value={author} placeholder="Book Author" onChange={handleChange} />
         <select value={selected} onChange={handleSelect}>
